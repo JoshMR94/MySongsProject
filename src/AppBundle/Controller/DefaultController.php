@@ -23,4 +23,13 @@ class DefaultController extends Controller
     {
         return $this->render('frontal/songs.html.twig');
     }
+
+    /**
+     * @Route("/options/{option}", name="options")
+     */
+    public function optionsAction(Request $request, $option="change-options")
+    {
+        return $this->render('frontal/options.html.twig', array("option" => $option));
+    }
+
 }

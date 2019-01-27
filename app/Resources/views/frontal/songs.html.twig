@@ -1,13 +1,13 @@
 {% extends 'base.html.twig' %}
 
-{% block titulo %}Songs{% endblock %}
+{% block title %}Songs{% endblock %}
 
-{% block contenido %}
+{% block content %}
 <!-- Page Content -->
 <div class="container">
 
     <!-- Page Heading/Breadcrumbs -->
-    {% block subtitulo %}
+    {% block subtitle %}
     <h1 class="mt-4 mb-3">Songs
         <small>A list of all the songs</small>
     </h1>
@@ -27,6 +27,7 @@
     <div class="row">
         <div class="col-lg-4 mb-4">
             <div class="card h-100">
+                <img class="card-img-top" src="{{ asset('img/ghost.jpg') }}" alt="">
                 <h4 class="card-header">Card Title</h4>
                 <div class="card-body">
                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
