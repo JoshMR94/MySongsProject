@@ -1,0 +1,19 @@
+{# Plantilla de mi aplicacion #}
+{% extends 'base.html.twig' %}
+
+{# Titulo #}
+{% block titulo %}My Songs Project!{% endblock %}
+
+{# Contenido #}
+{% block contenido %}
+<div class="container">
+    {% block subtitulo %}
+    <h1 class="mt-4 mb-3">Index page
+        <small>A list of all the songs</small>
+    </h1>
+    {% endblock %}
+
+    <p>The Index Page Login goes here</p>
+
+</div>
+{% endblock %}
